@@ -1,0 +1,19 @@
+.orderbar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+}
+
+.orderbar > button {
+  border: none;
+  font-size: medium;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.active {
+  background-color: rgb(185, 230, 181);
+  box-shadow: 1px 1px 1px 1px rgb(107, 133, 104);
+}

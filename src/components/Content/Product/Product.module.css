@@ -1,0 +1,12 @@
+.products{
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.view-products{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}

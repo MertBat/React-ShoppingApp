@@ -1,0 +1,29 @@
+.header{
+    background-color: rgb(82, 128, 168);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    font-size: larger;
+}
+
+.ul{
+    list-style-type: none;
+    gap: 20px;
+    display: flex;
+}
+
+.ul>li>img{
+    width: 160px;
+    height: 20px;
+}
+
+.ul>li>a{
+    text-decoration: none;
+    color:rgb(2, 2, 68);
+}
+
+.basket{
+    color:rgb(2, 2, 68);
+    margin-right: 20px;
+}
