@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import Styles from "./OrderBar.module.css";
-import { FilterContext } from "../../../../Services/FilterContext";
+import { FilterContext } from "../../../../Contexts/FilterContext";
 
 export const Orderbar = () => {
   const [priceActive, setPriceActive] = useState(0);

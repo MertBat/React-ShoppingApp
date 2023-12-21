@@ -19,4 +19,9 @@
   accent-color:#42b883;
 }
 
+.checkBox:hover{
+  background-color: rgba(245, 245, 245, 0.5);
+  border-radius: 5px;
+} 
+
 

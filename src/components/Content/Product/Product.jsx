@@ -2,16 +2,16 @@ import React, { useContext, useEffect } from "react";
 import { Orderbar } from "./OrderBar/OrderBar";
 import { ProductList } from "./ProductList/ProductList";
 import Styles from "./Product.module.css";
-import { ApiContext } from "../../../Services/ApiContext";
+import { ApiContext } from "../../../Contexts/ApiContext";
 import { Sidebar } from "./Sidebar/Sidebar";
-import { FilterContext } from "../../../Services/FilterContext";
+import { FilterContext } from "../../../Contexts/FilterContext";
 
 export const Product = () => {
   const { getProducts, products } = useContext(ApiContext);
   const{setReadyProducts} = useContext(FilterContext)
 
-  useEffect(async() => {
-   await getProducts();
+  useEffect(() => {
+    getProducts();
   }, []);
 
   useEffect(()=>{

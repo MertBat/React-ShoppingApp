@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
 import Styles from "./Sidebar.module.css";
 import { CheckBox } from "../../../../Common/CheckBox";
-import { ApiContext } from "../../../../Services/ApiContext";
-import { FilterContext } from "../../../../Services/FilterContext";
+import { ApiContext } from "../../../../Contexts/ApiContext";
+import { FilterContext } from "../../../../Contexts/FilterContext";
 
 export const Sidebar = () => {
   const [rating, setRating] = useState(1);

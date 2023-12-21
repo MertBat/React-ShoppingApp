@@ -7,6 +7,7 @@ export const Home = () => {
   return (
     <div className={Styles.home}>
         <Slider></Slider>
+        <center><h1>Trend Products</h1></center>    
         <Prominent></Prominent>
     </div>
   )

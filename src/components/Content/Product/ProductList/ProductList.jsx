@@ -1,8 +1,8 @@
 import { useContext, useEffect } from 'react'
 import Styles from "./ProductList.module.css"
-import { ApiContext } from '../../../../Services/ApiContext';
+import { ApiContext } from '../../../../Contexts/ApiContext';
 import { Card } from '../../../../Common/Card';
-import { FilterContext } from '../../../../Services/FilterContext';
+import { FilterContext } from '../../../../Contexts/FilterContext';
 
 export const ProductList = () => {
   const { products } = useContext(ApiContext);

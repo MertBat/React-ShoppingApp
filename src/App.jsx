@@ -4,12 +4,14 @@ import { Footer } from "./components/Footer/Footer.jsx";
 import Styles from "./App.module.css";
 import { Home } from "./components/Content/Home/Home.jsx";
 import { Product } from "./components/Content/Product/Product.jsx";
-import { ApiContextProvider } from "./Services/ApiContext.jsx";
-import { FilterProvider } from "./Services/FilterContext.jsx";
+import { ApiContextProvider } from "./Contexts/ApiContext.jsx";
+import { FilterProvider } from "./Contexts/FilterContext.jsx";
+import { BasketProvider } from "./Contexts/BasketContex.jsx";
 
 function App() {
   return (
     <BrowserRouter>
+    <BasketProvider>
       <div>
         <div className={Styles.header}>
           <Header></Header>
@@ -17,7 +19,7 @@ function App() {
         <hr className={Styles.line}/>
         <div className={Styles.content}>
           <ApiContextProvider>
-            <FilterProvider>
+            <FilterProvider>   
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/product" element={<Product />} />
@@ -29,6 +31,7 @@ function App() {
           <Footer></Footer>
         </div>
       </div>
+      </BasketProvider>
     </BrowserRouter>
   );
 }

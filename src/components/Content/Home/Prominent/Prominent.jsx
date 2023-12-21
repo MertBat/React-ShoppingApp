@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import Styles from "./Prominent.module.css";
-import { ApiContext } from "../../../../Services/ApiContext.jsx";
+import { ApiContext } from "../../../../Contexts/ApiContext.jsx";
 import {Card} from "../../../../Common/Card.jsx"
 
 export const Prominent = () => {

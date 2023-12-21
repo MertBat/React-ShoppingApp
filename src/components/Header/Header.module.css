@@ -2,8 +2,18 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 80px;
     justify-content:space-between;
-    font-size: larger;
+    font-size:x-large;
+    margin-top: 0;
+
+}
+
+.contents{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 40px;
 }
 
 .ul{
@@ -12,9 +22,9 @@
     display: flex;
 }
 
-.ul>li>img{
-    width: 160px;
-    height: 20px;
+.contents>img{
+    width: 60px;
+    height: 60px;
 }
 
 .ul>li>a{
@@ -25,4 +35,18 @@
 .basket{
     color:rgb(2, 2, 68);
     margin-right: 20px;
+}
+
+.counter{
+    background-color: #3da375;
+    position: absolute;
+    right: 12px;
+    top: 16px;
+    font-size: small;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    border-radius: 9px;
+    color: white;
+    font-weight: bold;
 }
