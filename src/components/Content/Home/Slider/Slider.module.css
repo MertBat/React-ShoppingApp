@@ -1,32 +1,51 @@
 /* Add transition for left property */
 .slider {
-    position: relative;
+    /* position: relative; */
     width: 100%;
-    height: 800px;
+    height: 500px;
     margin: auto;
     overflow: hidden;
   }
   
   /* Add left property to slide the images */
   .sliderImage {
-    width: 50%;
+    width: 100%;
     height: 500px;
-    transition: left 0.5s ease-in-out; /* Add transition for left property */
+    position: relative;
+    display: inline-block;
   }
   
   /* Navigation Buttons */
-  /* .navButton {
+  .navButton {
     position: absolute;
-    top: 50%;
+    top: 338px;
     transform: translateY(-50%);
-    font-size: 24px;
-    background: none;
+    padding: 10px;
+    background-color: #42b88352;
+    color: #030303;
     border: none;
-    color: #333;
     cursor: pointer;
+    height: 500px;
+    width: 40px;
+    font-size: x-large ;
+    opacity: 1;
+    transition: opacity .5s ease-in;
+  }
+
+  .hidden {
+    opacity: 0;
+    transition: opacity .5s ease-out;
+  }
+
+  .right{
+    right: 5px;
+  }
+
+  .left{
+    left: 5px;
   }
   
   .navButton:hover {
     color: #555;
   }
-   */
+

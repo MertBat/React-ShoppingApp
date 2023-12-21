@@ -1,49 +1,71 @@
-.sidebar{
-    padding: 15px 10px;
-    width: 250px;
-    height: fit-content;
-    margin-left: 30px;
-    background-color: rgb(116, 119, 119);
+.sidebar {
+  padding: 15px 10px;
+  width: 250px;
+  height: fit-content;
+  margin-left: 30px;
+  border: 1px solid rgb(214, 211, 211);
+  border-radius: 10px;
 }
 
-.sidebar>h3{
-    margin: 5px;
+.sidebar > h3 {
+  margin: 5px;
 }
 
-.sidebar>center>button{
-    font-size: larger;
-    width: 100px;
+.sidebar > center > button {
+  font-size: larger;
+  width: 100px;
 }
 
-.radio>label {
-    display: block;
-    position: relative;
-    padding-left: 10px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 18px;
-  }
-
-.categories{
-    height: 200px; 
-    overflow: auto;
-    border: 1px solid #ccc;
+.radio > label {
+  display: block;
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
 }
 
-.brands{
-    height: 200px; 
-    overflow: auto;
-    border: 1px solid #ccc;
+.radio > label>input {
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+    color:#42b883;
+}
+.categories {
+  height: 200px;
+  overflow: auto;
+  margin-top: 15px;
+  scrollbar-width: thin;
 }
 
-.price{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.brands {
+  height: 200px;
+  overflow: auto;
+  margin-top: 15px;
+  scrollbar-width: thin;
 }
 
-.price>input{
-    width: 80px;
-    height: 25px;
-    font-size: large;
+.price {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.price > input {
+  width: 80px;
+  height: 25px;
+  font-size: large;
+}
+
+.button{
+    border: none;
+    border-radius: 7px;
+    background-color:#42b883;
+    color: white;
+}
+
+.button:hover{
+    border: none;
+    background-color:#42b883;
+    color: white;
 }

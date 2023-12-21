@@ -4,11 +4,11 @@ import Styles from "./Card.module.css"
 export const Card = ({id,title,price,description,image} ) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className={Styles.card}>
+    <div className={Styles.card} onMouseOver={()=>setIsHovered(true)} onMouseLeave={()=>setIsHovered(false)}>
         <img src={image} className={Styles.img} />
         <h3 className={Styles.title}>{title}</h3>
         <p className={Styles.description} >{description}</p>
-        <div className={Styles.others} onMouseOver={()=>setIsHovered(true)} onMouseLeave={()=>setIsHovered(false)}>
+        <div className={Styles.others} >
         {isHovered ? (
           <button className={Styles["add-basket"]}>Sepete Ekle</button>
         ) : (

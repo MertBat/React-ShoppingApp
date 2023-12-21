@@ -29,7 +29,7 @@ export const FilterProvider = ({ children }) => {
 
     if (selectedRating !== 0) {
       filtered = filtered.filter(
-        (product) => Math.ceil(product.rating) <= selectedRating
+        (product) => Math.ceil(product.rating) >= selectedRating
       );
     }
 

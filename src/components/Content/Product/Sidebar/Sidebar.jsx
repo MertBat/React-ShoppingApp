@@ -5,7 +5,7 @@ import { ApiContext } from "../../../../Services/ApiContext";
 import { FilterContext } from "../../../../Services/FilterContext";
 
 export const Sidebar = () => {
-  const [rating, setRating] = useState(5);
+  const [rating, setRating] = useState(1);
   const [lowPrice, setLowPrice] = useState(0);
   const [highPrice, setHighPrice] = useState(0);
   const { categories, brands } = useContext(ApiContext);
@@ -76,21 +76,11 @@ export const Sidebar = () => {
           <input
             type="radio"
             name="rate"
-            value={5}
-            checked={rating === 5}
-            onChange={handleRatingChange}
-          />
-          Up to 5 Star
-        </label>
-        <label>
-          <input
-            type="radio"
-            name="rate"
             value={4}
             checked={rating === 4}
             onChange={handleRatingChange}
           />
-          Up to 4 Star
+          4 stars and above
         </label>
         <label>
           <input
@@ -100,7 +90,7 @@ export const Sidebar = () => {
             checked={rating === 3}
             onChange={handleRatingChange}
           />
-          Up to 3 Star
+          3 stars and above
         </label>
         <label>
           <input
@@ -110,7 +100,7 @@ export const Sidebar = () => {
             checked={rating === 2}
             onChange={handleRatingChange}
           />
-          Up to 2 Star
+          2 stars and above
         </label>
         <label>
           <input
@@ -120,7 +110,7 @@ export const Sidebar = () => {
             checked={rating === 1}
             onChange={handleRatingChange}
           />
-          Up to 1 Star
+          1 stars and above
         </label>
       </div>
       <hr />
@@ -142,7 +132,7 @@ export const Sidebar = () => {
         </div>
         <br />
         <center>
-          <button onClick={filterPrice}>Filter</button>
+          <button onClick={filterPrice} className={Styles.button}>Filter</button>
         </center>
     </div>
   );

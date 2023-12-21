@@ -12,7 +12,6 @@ export const Prominent = () => {
     })();
     
   }, []);
-  console.log(products); 
   return (
     <div className={Styles.cards}>
       {products.map((product) => 

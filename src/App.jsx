@@ -14,6 +14,7 @@ function App() {
         <div className={Styles.header}>
           <Header></Header>
         </div>
+        <hr className={Styles.line}/>
         <div className={Styles.content}>
           <ApiContextProvider>
             <FilterProvider>
