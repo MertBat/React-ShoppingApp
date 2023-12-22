@@ -52,6 +52,7 @@ export const Sidebar = () => {
       <div className={Styles.categories}>
         {categories.map((category) => (
           <CheckBox
+          key={categories.indexOf(category)}
             name={category}
             checked={filterCategory}
             unchecked={deFilterCategory}
@@ -63,6 +64,7 @@ export const Sidebar = () => {
       <div className={Styles.brands}>
         {brands.map((brand) => (
           <CheckBox
+          key={brands.indexOf(brand)}
             name={brand}
             checked={filterBrand}
             unchecked={deFilterBrand}

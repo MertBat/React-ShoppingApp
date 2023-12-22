@@ -19,6 +19,7 @@ export const Prominent = () => {
         .filter((product) => product.rating > 4.5)
         .map((product) => (
           <Card
+          key={product.id}
             id={product.id}
             title={product.title}
             image={product.thumbnail}

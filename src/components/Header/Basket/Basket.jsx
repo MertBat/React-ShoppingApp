@@ -12,7 +12,7 @@ export const Basket = ({ basketHidden }) => {
   }, [basketList]);
  
   return (
-    <div className={`${Styles.popup} ${basketHidden && basketList.length !=0 ? Styles.active : ""}`}>
+    <div className={`${Styles.popup} ${basketHidden? Styles.active : ""}`}>
       <div className={Styles.products}>
         {basketList.map((product) => (
           <ProductsInBasket {...product} />

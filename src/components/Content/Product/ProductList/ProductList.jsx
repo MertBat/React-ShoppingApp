@@ -9,7 +9,6 @@ export const ProductList = () => {
 
   useEffect(() => {}, [renderAfterOrderChange]);
 
-  console.log(filteredProducts);
   return (
     <div className={Styles["product-list"]}>
       {filteredProducts.length === 0 ? (
@@ -18,6 +17,7 @@ export const ProductList = () => {
         filteredProducts.map((product) => (
           <Card
             key={product.id}
+            id={product.id}
             title={product.title}
             image={product.thumbnail}
             price={product.price}

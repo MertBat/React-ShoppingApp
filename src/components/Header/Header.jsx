@@ -1,4 +1,4 @@
-import React, { useContext, useState,useEffect } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import Styles from "./Header.module.css";
 import { Basket } from "./Basket/Basket";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,7 +16,8 @@ export const Header = () => {
   }, [basketList]);
 
   const popup = () => {
-    setShowPopup((prev) => !prev);
+    if (basketList.length != 0) setShowPopup((prev) => !prev);
+    else setShowPopup(false);
   };
 
   return (
