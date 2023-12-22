@@ -26,8 +26,8 @@
 }
 
 .radio > label:hover{
-    background-color: rgba(245, 245, 245, 0.5);
-    border-radius: 5px;
+  background-color:#42b88310;    
+  border-radius: 2px;
 } 
 
 .radio > label > input {
@@ -63,9 +63,16 @@
   width: 80px;
   height: 25px;
   font-size: large;
+  border-color: rgba(128, 128, 128, 0.137);
+}
+
+.price > input:focus {
+  border-color: #4ccf9434;
+  outline: none; 
 }
 
 .button {
+  height: fit-content;
   border: none;
   border-radius: 5px;
   background-color: #4ccf94;
@@ -76,4 +83,8 @@
   border: none;
   background-color: #3da375;
   color: white;
+}
+
+.button:active{
+  box-shadow:1px 1px 1px 1px #32855f6e;
 }

@@ -1,28 +1,31 @@
-import { useContext, useEffect } from 'react'
-import Styles from "./ProductList.module.css"
-import { ApiContext } from '../../../../Contexts/ApiContext';
-import { Card } from '../../../../Common/Card';
-import { FilterContext } from '../../../../Contexts/FilterContext';
+import { useContext, useEffect } from "react";
+import Styles from "./ProductList.module.css";
+import { Card } from "../../../../Common/Card";
+import { FilterContext } from "../../../../Contexts/FilterContext";
 
 export const ProductList = () => {
-  const { products } = useContext(ApiContext);
-  const{filteredProducts, renderAfterOrderChange} = useContext(FilterContext)
+  const { filteredProducts, renderAfterOrderChange } =
+    useContext(FilterContext);
 
-  useEffect(() => {
+  useEffect(() => {}, [renderAfterOrderChange]);
 
-  }, [renderAfterOrderChange]);
+  console.log(filteredProducts);
   return (
     <div className={Styles["product-list"]}>
-      {filteredProducts.map((product) => 
-        <Card
-          id={product.id}
-          title={product.title}
-          image={product.thumbnail}
-          price={product.price}
-          description={product.description}
-        ></Card>
-      )
-      }
+      {filteredProducts.length === 0 ? (
+        <h3>There is nothing to show</h3>
+      ) : (
+        filteredProducts.map((product) => (
+          <Card
+            key={product.id}
+            title={product.title}
+            image={product.thumbnail}
+            price={product.price}
+            description={product.description}
+            rating = {product.rating}
+          ></Card>
+        ))
+      )}
     </div>
-  )
-}
+  );
+};

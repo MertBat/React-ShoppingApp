@@ -52,6 +52,10 @@ img {
   font-weight: 500;
   color: #42b883;
   font-weight: 600;
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
 }
 
 .add-basket{
@@ -70,3 +74,23 @@ img {
   background-color: #3da375;
   transition: background-color .2s ease-out;
 }
+
+.add-basket:active{
+  box-shadow:1px 1px 1px 1px #32855f6e;
+}
+
+.star-rating{
+}
+
+.solid-star{
+  color: #4ccf94;
+
+}
+.half-star{
+  color: #4ccf94;
+
+}
+.regular-star{
+  color: #4ccf94;
+}
+

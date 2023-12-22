@@ -6,8 +6,8 @@ import { FilterContext } from "../../../../Contexts/FilterContext";
 
 export const Sidebar = () => {
   const [rating, setRating] = useState(1);
-  const [lowPrice, setLowPrice] = useState(0);
-  const [highPrice, setHighPrice] = useState(0);
+  const [lowPrice, setLowPrice] = useState("");
+  const [highPrice, setHighPrice] = useState("");
   const { categories, brands } = useContext(ApiContext);
   const {
     setSelectedCategories,
@@ -118,14 +118,14 @@ export const Sidebar = () => {
         <div className={Styles.price}>
           <input
             type="number"
-            placeholder="Lowest"
+            placeholder="0"
             value={lowPrice}
             onChange={(e) => setLowPrice(e.target.value)}
           />
           <span> &nbsp; - &nbsp; </span>
           <input
             type="number"
-            placeholder="Highest"
+            placeholder="0"
             value={highPrice}
             onChange={(e) => setHighPrice(e.target.value)}
           />
